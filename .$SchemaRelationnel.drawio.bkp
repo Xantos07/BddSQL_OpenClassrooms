@@ -1,0 +1,62 @@
+<mxfile host="Electron" modified="2025-01-29T14:55:45.410Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.8 Chrome/112.0.5615.165 Electron/24.2.0 Safari/537.36" etag="0lvY4_NlRsTUe1GLHWwM" version="21.2.8" type="device">
+  <diagram name="Page-1" id="pFAoL99INzklDiO9H6i0">
+    <mxGraphModel dx="1621" dy="1957" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="TMwlR4mTLICL3NxWOepm-2" value="Bien" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-156" y="-850" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="TMwlR4mTLICL3NxWOepm-3" value="Id_bien : INTEGER NOT NULL" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-156" y="-810" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lXuE5KHZ9plbNCozS5o0-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endArrow=ERmany;endFill=0;" parent="1" source="TMwlR4mTLICL3NxWOepm-4" target="TMwlR4mTLICL3NxWOepm-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TMwlR4mTLICL3NxWOepm-4" value="Id_codedep_codecommune : VARCHAR NOT NULL&lt;br&gt;No_voie : INTERGER&lt;br&gt;BTQ : VARCHAR(1)&lt;br&gt;Type_voie : VARCHAR(4)&lt;br&gt;Voie : VARCHAR(50)&lt;br&gt;Total_piece : INTEGER&lt;br&gt;Surface_carrz : FLOAT&lt;br&gt;Surface_Local : INTEGER&lt;br&gt;Type_local : VARCHAR(50)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-156" y="-770" width="280" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="TMwlR4mTLICL3NxWOepm-5" value="Vente" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="274" y="-780" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="TMwlR4mTLICL3NxWOepm-6" value="Id_vente : INTEGER NOT NULL" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="274" y="-740" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="TMwlR4mTLICL3NxWOepm-7" value="Id_bien : INTEGER NOT NULL&lt;br&gt;Date : Date NOT NULL&lt;br&gt;Valeur : INTEGER" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="274" y="-700" width="280" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lXuE5KHZ9plbNCozS5o0-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=ERoneToMany;endFill=0;" parent="1" source="TMwlR4mTLICL3NxWOepm-8" target="TMwlR4mTLICL3NxWOepm-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TMwlR4mTLICL3NxWOepm-8" value="Commune" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-156" y="-480" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="TMwlR4mTLICL3NxWOepm-9" value="Id_codedep_codecommune : VARCHAR NOT NULL" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-156" y="-440" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="TMwlR4mTLICL3NxWOepm-10" value="Id_regional : INTGER NOT NULL&lt;br&gt;Code_departement : VARCHAR NOT NULL&lt;br&gt;Code_commune ; INTERGER NOT NULL&lt;br&gt;Code_postal : INTEGER&lt;br&gt;Nom_commune : VARCHAR(50) NOT NULL&lt;br&gt;Nbre_habitant_2019 : INTEGER NOT NULL" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-156" y="-400" width="280" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="TMwlR4mTLICL3NxWOepm-67" value="Region" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-170" y="-120" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="TMwlR4mTLICL3NxWOepm-68" value="Id_regional : INT NOT NULL" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-170" y="-80" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="TMwlR4mTLICL3NxWOepm-69" value="Nom_region :&amp;nbsp;VARCHAR(50)&lt;br&gt;&amp;nbsp;NOT NULL&lt;br&gt;Nom_regroup : VARCHAR(50)&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&amp;nbsp;NOT NULL" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-170" y="-40" width="280" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="lXuE5KHZ9plbNCozS5o0-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=ERoneToMany;endFill=0;" parent="1" source="TMwlR4mTLICL3NxWOepm-67" target="TMwlR4mTLICL3NxWOepm-10" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-6" y="-470" as="sourcePoint" />
+            <mxPoint x="-6" y="-560" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-16" y="-180" />
+              <mxPoint x="-16" y="-180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
